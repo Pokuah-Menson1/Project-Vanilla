@@ -1,0 +1,89 @@
+body {
+  background-color: #f9f7fe;
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.app {
+  width: 600px;
+  border: 1px solid whitesmoke;
+  border-radius: 30px;
+  padding: 25px;
+  margin: 0 auto;
+  box-shadow: 4px 4px 2px whitesmoke;
+  background: white;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding-right: 33px;
+}
+
+.temperature {
+  font-size: 70px;
+  padding-top: 35px;
+}
+.degree {
+  font-size: 110px;
+}
+.celsius {
+  vertical-align: 60px;
+  font-size: 26px;
+}
+
+h1 {
+  font-size: 45px;
+  margin-bottom: 0 auto;
+}
+
+strong {
+  color: #f65282;
+}
+
+.forecast {
+  font-size: 20px;
+  color: #d2d2d3;
+  padding-bottom: 40px;
+}
+
+input[type="search"] {
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 20px;
+  width: 436px;
+  margin: 20px 12px;
+  background: #f9f7fe;
+  border: 1px solid whitesmoke;
+  box-shadow: 2px 2px 2px whitesmoke;
+}
+
+input[type="submit"] {
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 110px;
+  background: #885df1;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  box-shadow: 2px 2px 2px whitesmoke;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  border-top: 1px solid #f9f7fe;
+  padding-top: 23px;
+}
+
+.emoji {
+  font-size: 76px;
+}
+
+a {
+  color: #885df1;
+}

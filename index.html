@@ -4,37 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
+
   <body>
-    <header>
-      <h1>Welcome to Project Vanilla</h1>
+    <div class="app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
 
-      <input type="text" placeholder="Enter a city..." />
-      <input type="submit" value="Search" />
-    </header>
-
-    <section>
-      <div class="container">
-        <div class="city">
-          <h1>Paris</h1>
-          <div>
-            Thursday 6:08, clear sky <br />
-            Humidity:39%, Wind: 4.63km/h
+      <div class="main">
+        <section>
+          <div class="container">
+            <div class="city">
+              <h1 class="current-city" id="current-city">Paris</h1>
+              <div class="forecast">
+                <span class="day" id="current-date">Thursday 6:08</span>
+                , clear sky <br />
+                Humidity: <strong> 39%</strong>, Wind: <strong>4.63km/h</strong>
+              </div>
+            </div>
+            <div class="temperature">
+              <span class="emoji">⛅</span
+              ><span class="degree" id="current-temperature">26</span
+              ><span class="celsius">ºC</span>
+            </div>
           </div>
-
-          <div class="temperature">26ºC</div>
-        </div>
+        </section>
       </div>
-    </section>
+      <footer>
+        Coded by
+        <a href="https://github.com/Pokuah-Menson1" target="_blank"
+          >Abena Pokuah</a
+        >
+        ,
+        <a href="https://github.com/" target="_blank"
+          >is open-sourced on Github</a
+        >
+        and
+        <a href="https://www.netlify.com/" target="_blank">hosted on Netlify</a>
+      </footer>
 
-    <footer>
-      Coded by
-      <a href="https://github.com/Pokuah-Menson1" target="_blank"
-        >ABENA POKUAH</a
-      >
-      ,open-sourced on
-      <a href="https://github.com/" target="_blank">Github</a> website hosted on
-      <a href="https://www.netlify.com/" target="_blank">Netlify</a>
-    </footer>
+      <link rel="stylesheet" href="src/index.js" />
+    </div>
   </body>
 </html>
