@@ -57,6 +57,9 @@ input[type="search"] {
   background: #f9f7fe;
   border: 1px solid whitesmoke;
   box-shadow: 2px 2px 2px whitesmoke;
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 input[type="submit"] {
@@ -68,6 +71,9 @@ input[type="submit"] {
   color: whitesmoke;
   border: 1px solid whitesmoke;
   box-shadow: 2px 2px 2px whitesmoke;
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 footer {
