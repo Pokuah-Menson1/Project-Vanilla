@@ -14,6 +14,8 @@ function displayTemperature(response) {
   temperatureElement.innerHTML = temperature;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+
+  getForecast(response.data.city);
 }
 
 function searchCity(city) {
@@ -29,7 +31,13 @@ function searchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "d6e042aed32o0300tf693e68535fe8bb";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
   let forecastElement = document.querySelector("#weather-forecast");
 
   let days = ["Tue", "Wed", "Thurs", "Fri", "Sat"];
@@ -38,7 +46,7 @@ function displayForecast() {
     forecastHtml =
       forecastHtml +
       `<div class="weather-forecast-day">
-              <div class="weather-forecast-date">${days}</div>
+              <div class="weather-forecast-date">${day}</div>
               <div class="weather-forecast-icon">🌨️</div>
               <div class="weather-forecast-temperatures">
                 <div class="weather-forecast-temperature">
